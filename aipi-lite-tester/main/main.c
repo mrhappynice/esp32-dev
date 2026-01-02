@@ -47,7 +47,7 @@ static const char *TAG = "aipi_lite_display";
 #define LCD_V_RES        128
 
 /* ========= WiFi ========= */
-#define WIFI_SSID        "zpnet"
+#define WIFI_SSID        "wifinet"
 #define WIFI_PASS        "password"
 
 static EventGroupHandle_t s_wifi_event_group;
@@ -409,3 +409,4 @@ void app_main(void)
 
     xTaskCreatePinnedToCore(ui_task, "ui_task", 4096, NULL, 5, NULL, 1);
 }
+
